@@ -1,0 +1,45 @@
+<nav class="navbar bg-info" style="height: 100px;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="https://website.gkciet.ac.in/img/brand/AICTE.png" alt="" width="300" height="100" class="d-inline-block align-text-top">
+    </a>
+    <div style="text-align: center;"><h3 > Welcome to AICTE SSPCA</h3></div>
+  </div>
+</nav>
+<div><marquee width="100%" direction="right" height="20px">
+  Welcome to AICTE. All India Council for Technical Education (AICTE) 
+  </marquee></div>
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/login">login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/payment">payment</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+            Registration
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" routerLink="/sturegistration">Student Registration</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<router-outlet> <router-outlet />
+<app-footer></app-footer>
